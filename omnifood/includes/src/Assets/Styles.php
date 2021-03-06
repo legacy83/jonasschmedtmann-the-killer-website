@@ -17,25 +17,24 @@ class Styles implements BootstrapInterface, ServiceProviderInterface
 
     public function __bootstrap(): void
     {
-        add_action( 'after_setup_theme', function () {
+        add_action('after_setup_theme', function () {
 
             // dequeue parent styles
-            add_action( 'wp_enqueue_scripts', [ $this, 'dequeueScripts' ], 15 );
+            add_action('wp_enqueue_scripts', [$this, 'dequeueScripts'], 15);
 
             // enqueue theme styles
-            add_action( 'wp_enqueue_scripts', [ $this, 'enqueueScripts' ] );
-
-        } );
+            add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
+        });
     }
 
     public function dequeueScripts(): void
     {
-        wp_dequeue_style( 'sanse-parent-style' );
-        wp_dequeue_style( 'sanse-style' );
+        wp_dequeue_style('sanse-parent-style');
+        wp_dequeue_style('sanse-style');
     }
 
     public function enqueueScripts(): void
     {
-        wp_enqueue_style( 'app-theme-screen', get_theme_file_uri( 'resources/assets/css/screen.css' ) );
+        wp_enqueue_style('app-theme-style', get_stylesheet_uri());
     }
 }

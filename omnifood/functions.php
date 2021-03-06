@@ -12,7 +12,6 @@ define('APP_THEME_FILE', __FILE__);
 #
 
 add_action('mezu/bootstrap', function (\Dalen\theme $theme) {
-
     $theme->register(new \App\Theme\Assets\Scripts());
     $theme->register(new \App\Theme\Assets\Styles());
     $theme->register(new \App\Theme\Sanse\Background());
