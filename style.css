@@ -13,10 +13,17 @@
  * Use it to make something cool, have fun, and share what you've learned with others.
  */
 
+/*--------------------------------------------------------------
+ # Imports
+ --------------------------------------------------------------*/
 @import 'http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic';
 @import 'resources/3rd-party/css/normalize.css';
 @import 'resources/3rd-party/css/grid.css';
 @import 'resources/theme/css/screen.css';
+
+/*--------------------------------------------------------------
+ # Base
+ --------------------------------------------------------------*/
 
 * {
 	box-sizing: border-box;
@@ -33,42 +40,17 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
+/*--------------------------------------------------------------
+ # Reusable Components
+ --------------------------------------------------------------*/
+
 .row {
 	margin: 0 auto;
 	max-width: 1140px;
 }
 
 /*--------------------------------------------------------------
- # Header
- --------------------------------------------------------------*/
-header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/content/img/hero.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-}
-
-.hero-text-box {
-	left: 50%;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 1140px;
-}
-
-h1 {
-	color: #fff;
-	font-size: 240%;
-	font-weight: 300;
-	letter-spacing: 1px;
-	margin: 0;
-	margin-bottom: 28px;
-	text-transform: uppercase;
-	word-spacing: 4px;
-}
-
-/*--------------------------------------------------------------
- # Button
+ # Buttons
  --------------------------------------------------------------*/
 
 .btn:link,
@@ -113,4 +95,77 @@ h1 {
 .btn-ghost:focus {
 	border: 1px solid #cf6d17;
 	color: #fff;
+}
+
+/*--------------------------------------------------------------
+ # Header
+ --------------------------------------------------------------*/
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/content/img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+/*--------------------------------------------------------------
+ ## Header | Hero
+ --------------------------------------------------------------*/
+.hero-text-box {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1140px;
+}
+
+h1 {
+	color: #fff;
+	font-size: 240%;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: 0;
+	margin-bottom: 28px;
+	text-transform: uppercase;
+	word-spacing: 4px;
+}
+
+/*--------------------------------------------------------------
+ ## Header | Logo
+ --------------------------------------------------------------*/
+.logo {
+	float: left;
+	height: 100px;
+	margin-top: 20px;
+	width: auto;
+}
+
+/*--------------------------------------------------------------
+ ## Header | Nav
+ --------------------------------------------------------------*/
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	color: #fff;
+	border-bottom: 2px solid transparent;
+	font-size: 90%;
+	padding: 8px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: border 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active,
+.main-nav li a:focus {
+	border-bottom: 2px solid #e67e22;
 }
