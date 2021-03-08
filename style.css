@@ -18,6 +18,7 @@
  --------------------------------------------------------------*/
 @import 'http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic';
 @import 'resources/3rd-party/css/normalize.css';
+@import 'resources/3rd-party/css/ionicons.min.css';
 @import 'resources/3rd-party/css/grid.css';
 @import 'resources/theme/css/screen.css';
 
@@ -47,6 +48,79 @@ html {
 .row {
 	margin: 0 auto;
 	max-width: 1140px;
+}
+
+section {
+	padding: 80px 0;
+}
+
+.box {
+	padding: 1%;
+}
+
+/*--------------------------------------------------------------
+ # Headings
+ --------------------------------------------------------------*/
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h1 {
+	color: #fff;
+	font-size: 240%;
+	letter-spacing: 1px;
+	margin: 0;
+	margin-bottom: 28px;
+	word-spacing: 4px;
+}
+
+h2 {
+	font-size: 180%;
+	margin-bottom: 30px;
+	text-align: center;
+	word-spacing: 2px;
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+
+h2:after {
+	background-color: #e67e22;
+	content: ' ';
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 100px;
+}
+
+/*--------------------------------------------------------------
+ # Paragraphs
+ --------------------------------------------------------------*/
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+}
+
+/*--------------------------------------------------------------
+ # Icons
+ --------------------------------------------------------------*/
+.icon-big {
+	color: #e67e22;
+	font-size: 350%;
+	display: block;
+	margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -115,17 +189,6 @@ header {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 1140px;
-}
-
-h1 {
-	color: #fff;
-	font-size: 240%;
-	font-weight: 300;
-	letter-spacing: 1px;
-	margin: 0;
-	margin-bottom: 28px;
-	text-transform: uppercase;
-	word-spacing: 4px;
 }
 
 /*--------------------------------------------------------------
