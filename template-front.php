@@ -25,6 +25,7 @@ use function Mezu\view;
 	<?= view('hero')->render(); ?>
 	<?= view('features')->render(); ?>
 	<?= view('meals')->render(); ?>
+	<?= view('steps')->render(); ?>
 
 	<?php wp_footer(); ?>
 
