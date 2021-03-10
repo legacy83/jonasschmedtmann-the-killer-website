@@ -220,6 +220,7 @@ a:focus {
  # Header
  --------------------------------------------------------------*/
 header {
+	background-attachment: fixed;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/content/img/hero.jpg);
 	background-size: cover;
 	background-position: center;
@@ -393,3 +394,39 @@ header {
 /*--------------------------------------------------------------
  # Testimonials
  --------------------------------------------------------------*/
+.section-testimonials {
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(resources/content/img/back-customers.jpg);
+	background-size: cover;
+	color: #fff;
+}
+
+blockquote {
+	font-style: italic;
+	line-height: 145%;
+	margin-top: 40px;
+	padding: 2%;
+	position: relative;
+}
+
+blockquote::before {
+	content: '\201C';
+	display: block;
+	font-size: 500%;
+	left: -5px;
+	position: absolute;
+	top: 5px;
+}
+
+cite {
+	display: block;
+	font-size: 90%;
+	margin-top: 25px;
+}
+
+cite img {
+	border-radius: 50%;
+	height: 45px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
