@@ -42,6 +42,21 @@ html {
 }
 
 /*--------------------------------------------------------------
+ # Clearfix
+ --------------------------------------------------------------*/
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix::after {
+	clear: both;
+	content: '.';
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/*--------------------------------------------------------------
  # Reusable Components
  --------------------------------------------------------------*/
 
@@ -274,4 +289,54 @@ header {
 .meal-photo img:hover {
 	opacity: 1;
 	transform: scale(1.03);
+}
+
+/*--------------------------------------------------------------
+ # How It Works
+ --------------------------------------------------------------*/
+.section-steps {
+	background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+	margin-top: 30px;
+	padding-right: 3%;
+	text-align: right;
+}
+
+.steps-box:last-child {
+	margin-top: 70px;
+	padding-left: 3%;
+}
+
+.app-screen {
+	width: 40%;
+}
+
+.works-step {
+	margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+	margin-bottom: 80px;
+}
+
+.works-step div {
+	color: #e67e22;
+	border: 2px solid #e67e22;
+	border-radius: 50%;
+	display: block;
+	font-size: 150%;
+	float: left;
+	height: 55px;
+	margin-right: 25px;
+	padding: 5px;
+	text-align: center;
+	width: 55px;
+}
+
+.btn-app img {
+	height: 50px;
+	margin-right: 10px;
+	width: auto;
 }
