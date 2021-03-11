@@ -8,9 +8,6 @@
                 <li><a href="#cities">Our cities</a></li>
                 <li><a href="#plans">Sign up</a></li>
             </ul>
-            <a class="mobile-nav-icon js--nav-icon">
-                <i class="ion-navicon-round"></i>
-            </a>
         </div>
     </nav>
     <div class="hero-text-box">
