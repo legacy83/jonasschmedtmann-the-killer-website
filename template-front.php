@@ -29,6 +29,8 @@ use function Mezu\view;
 	<?= view('cities')->render(); ?>
 	<?= view('testimonials')->render(); ?>
 	<?= view('plans')->render(); ?>
+	<?= view('contact')->render(); ?>
+	<?= view('footer')->render(); ?>
 
 	<?php wp_footer(); ?>
 
