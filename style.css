@@ -173,7 +173,8 @@ a:focus {
  # Buttons
  --------------------------------------------------------------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type='submit'] {
 	border-radius: 200px;
 	display: inline-block;
 	font-weight: 300;
@@ -183,7 +184,8 @@ a:focus {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type='submit'] {
 	background-color: #e67e22;
 	border: 1px solid #e67e22;
 	color: #fff;
@@ -198,7 +200,9 @@ a:focus {
 
 .btn:hover,
 .btn:active,
-.btn:focus {
+.btn:focus,
+input[type='submit']:hover,
+input[type='submit']:focus {
 	background-color: #cf6d17;
 }
 
@@ -485,4 +489,34 @@ plan-price-meal {
 
 .plan-box ul li {
 	padding: 5px 0;
+}
+
+/*--------------------------------------------------------------
+ # Contact
+ --------------------------------------------------------------*/
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type='email'],
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type='checkbox'] {
+	margin: 10px 5px 10px 0;
+}
+
+*:focus {
+	outline: none;
 }
