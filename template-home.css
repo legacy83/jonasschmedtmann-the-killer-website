@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------
+ # Imports
+ --------------------------------------------------------------*/
+@import 'http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic';
+@import 'resources/3rd-party/css/normalize.css';
+
+/*--------------------------------------------------------------
+ # Base
+ --------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+/*--------------------------------------------------------------
+ # Hero
+ --------------------------------------------------------------*/
+.is-custom-styled-12f944bc.wp-block-cover {
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.is-custom-styled-12f944bc .wp-block-cover__inner-container {
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+/* --- heading --- */
+.is-custom-styled-12f944bc h1 {
+	font-size: 240%;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: 0 0 24px;
+	text-transform: uppercase;
+	word-spacing: 4px;
+}
+
+/* --- buttons --- */
+.wp-block-button__link,
+.wp-block-button__link:visited {
+	background-color: #e67e22;
+	border-radius: 200px;
+	border: 1px solid #e67e22;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 10px 30px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:active,
+.wp-block-button__link:focus {
+	background-color: #cf6d17;
+	border-color: #cf6d17;
+}
+
+div.wp-block-button:nth-child(2) > .wp-block-button__link {
+	background-color: transparent;
+	color: #e67e22;
+}
+
+div.wp-block-button:nth-child(2) > .wp-block-button__link:hover,
+div.wp-block-button:nth-child(2) > .wp-block-button__link:active,
+div.wp-block-button:nth-child(2) > .wp-block-button__link:focus {
+	background-color: #cf6d17;
+	border-color: #cf6d17;
+	color: #fff;
+}
+
+div.wp-block-button:nth-child(1) {
+	margin-right: 15px;
+	margin-bottom: 0;
+}

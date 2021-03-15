@@ -12,7 +12,7 @@
 
 <body <?php body_class(); ?>>
 
-    <?php do_action('app/theme/layout/main'); ?>
+    <?php do_action('app/theme/layout'); ?>
 
     <?php wp_footer(); ?>
 
