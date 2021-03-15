@@ -4,7 +4,7 @@
     </div>
     <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
-            <img src="<?= get_theme_file_uri('resources/content/img/lisbon-3.jpg'); ?>" alt="Lisbon">
+            <img src="<?= get_theme_file_uri('resources/images/content/lisbon-3.jpg'); ?>" alt="Lisbon">
             <h3>Lisbon</h3>
             <div class="city-feature">
                 <i class="ion-ios-person icon-small"></i>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="col span-1-of-4 box">
-            <img src="<?= get_theme_file_uri('resources/content/img/san-francisco.jpg'); ?>" alt="San Francisco">
+            <img src="<?= get_theme_file_uri('resources/images/content/san-francisco.jpg'); ?>" alt="San Francisco">
             <h3>San Francisco</h3>
             <div class="city-feature">
                 <i class="ion-ios-person icon-small"></i>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="col span-1-of-4 box">
-            <img src="<?= get_theme_file_uri('resources/content/img/berlin.jpg'); ?>" alt="Berlin">
+            <img src="<?= get_theme_file_uri('resources/images/content/berlin.jpg'); ?>" alt="Berlin">
             <h3>Berlin</h3>
             <div class="city-feature">
                 <i class="ion-ios-person icon-small"></i>
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="col span-1-of-4 box">
-            <img src="<?= get_theme_file_uri('resources/content/img/london.jpg'); ?>" alt="London">
+            <img src="<?= get_theme_file_uri('resources/images/content/london.jpg'); ?>" alt="London">
             <h3>London</h3>
             <div class="city-feature">
                 <i class="ion-ios-person icon-small"></i>

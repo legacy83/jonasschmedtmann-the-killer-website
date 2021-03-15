@@ -1,7 +1,7 @@
 <header>
     <nav>
         <div class="row">
-            <img src="<?= get_theme_file_uri('resources/content/img/logo-white.png'); ?>" alt="Omnifood Logo" class="logo">
+            <img src="<?= get_theme_file_uri('resources/images/content/logo-white.png'); ?>" alt="Omnifood Logo" class="logo">
             <ul class="main-nav js--main-nav">
                 <li><a href="#features">Food delivery</a></li>
                 <li><a href="#works">How it works</a></li>

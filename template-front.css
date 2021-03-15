@@ -5,7 +5,6 @@
 @import 'resources/3rd-party/css/normalize.css';
 @import 'resources/3rd-party/css/ionicons.min.css';
 @import 'resources/3rd-party/css/grid.css';
-@import 'resources/theme/css/screen.css';
 
 /*--------------------------------------------------------------
  # Base
@@ -210,7 +209,7 @@ input[type='submit']:focus {
  --------------------------------------------------------------*/
 header {
 	background-attachment: fixed;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/content/img/hero.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/images/hero.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -385,7 +384,7 @@ header {
  --------------------------------------------------------------*/
 .section-testimonials {
 	background-attachment: fixed;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(resources/content/img/back-customers.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(resources/images/back-customers.jpg);
 	background-size: cover;
 	color: #fff;
 }
