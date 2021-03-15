@@ -1,16 +1,11 @@
 <?php
 
-namespace App\Theme\Assets;
+namespace App\Theme;
 
 use Dalen\Contracts\BootstrapInterface;
 use Dalen\Contracts\DI\ServiceProviderInterface;
 use Dalen\DI\ServiceProviderTrait;
 
-/**
- * Class Styles
- *
- * @package App\Theme\Assets
- */
 class Styles implements BootstrapInterface, ServiceProviderInterface
 {
     use ServiceProviderTrait;
@@ -21,9 +16,6 @@ class Styles implements BootstrapInterface, ServiceProviderInterface
 
             // dequeue parent styles
             add_action('wp_enqueue_scripts', [$this, 'dequeueScripts'], 15);
-
-            // enqueue theme styles
-            add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
         });
     }
 
@@ -31,10 +23,5 @@ class Styles implements BootstrapInterface, ServiceProviderInterface
     {
         wp_dequeue_style('sanse-parent-style');
         wp_dequeue_style('sanse-style');
-    }
-
-    public function enqueueScripts(): void
-    {
-        wp_enqueue_style('app-theme-style', get_stylesheet_uri());
     }
 }
