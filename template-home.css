@@ -54,6 +54,61 @@ html {
 }
 
 /*--------------------------------------------------------------
+ # Block: Buttons
+ --------------------------------------------------------------*/
+.wp-block-button__link,
+.wp-block-button__link:visited {
+	background-color: transparent;
+	border: 1px solid #e67e22;
+	color: #e67e22;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 10px 30px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:active,
+.wp-block-button__link:focus {
+	background-color: #cf6d17;
+	border: 1px solid #cf6d17;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+ # Block: Colors
+ --------------------------------------------------------------*/
+.has-primary-color {
+	color: #e67e22;
+}
+
+.has-primary-dark-color {
+	color: #cf6d17;
+}
+
+.has-white-color {
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+ # Block: Background Colors
+ --------------------------------------------------------------*/
+.has-primary-background-color {
+	background-color: #e67e22;
+	border-color: #e67e22;
+}
+
+.has-primary-dark-background-color {
+	background-color: #cf6d17;
+	border-color: #cf6d17;
+}
+
+.has-white-background-color {
+	background-color: #fff;
+	border-color: #fff;
+}
+
+/*--------------------------------------------------------------
  # Headings
  --------------------------------------------------------------*/
 h1,
@@ -64,21 +119,19 @@ h3 {
 }
 
 h1 {
-	/* color: #fff; */
-	/* font-size: 240%; */
+	font-size: 240%;
 	letter-spacing: 1px;
-	margin: 0;
-	margin-bottom: 28px;
+	margin: 0 0 28px;
 	word-spacing: 4px;
 }
 
 /*--------------------------------------------------------------
  # Hero
  --------------------------------------------------------------*/
-.is-custom-styled-5e1632a5 h1 {
+.is-custom-styled-5e1632a5 .wp-block-group {
 	left: 50%;
 	position: absolute;
-	top: 50%;
+	top: 47%;
 	transform: translate(-50%, -50%);
 	width: 1140px;
 }
