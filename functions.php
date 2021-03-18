@@ -28,22 +28,31 @@ add_action('mezu/bootstrap', function (Theme $theme) {
 
 add_action('after_setup_theme', function () {
     add_theme_support('editor-styles');
-    add_editor_style('template-home.css');
-
-    add_theme_support('align-wide');
+    add_editor_style('editor-styles-home.css');
 
     add_theme_support('disable-custom-colors');
-
     add_theme_support('editor-color-palette', [
         [
-            'name'  => 'Orange #1',
-            'slug'  => 'orange-1',
+            'name'  => 'Primary',
+            'slug'  => 'primary',
             'color' => '#e67e22',
         ],
         [
-            'name'  => 'Orange #2',
-            'slug'  => 'orange-2',
+            'name'  => 'Primary Dark',
+            'slug'  => 'primary-dark',
             'color' => '#cf6d17',
+        ],
+        [
+            'name'  => 'White',
+            'slug'  => 'white',
+            'color' => '#ffffff',
         ]
     ]);
+
+    add_theme_support('align-wide');
+    add_theme_support('wp-block-styles');
+
+    add_theme_support('disable-custom-font-sizes');
+    add_theme_support('disable-custom-gradients');
+    remove_theme_support('core-block-patterns');
 });
