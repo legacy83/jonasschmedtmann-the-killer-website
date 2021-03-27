@@ -3,7 +3,6 @@
 define('APP_THEME', true);
 define('APP_THEME_FILE', __FILE__);
 
-use App\Theme\Gutenberg;
 use App\Theme\Styles;
 use Dalen\Theme;
 
@@ -16,6 +15,5 @@ use Dalen\Theme;
 #
 
 add_action('mezu/bootstrap', function (Theme $theme) {
-    $theme->register(new Gutenberg);
     $theme->register(new Styles);
 });

@@ -8,7 +8,6 @@
 use function Mezu\view;
 
 add_action('wp_enqueue_scripts', function () {
-
 	// enqueue page styles
 	wp_enqueue_style(
 		'app/theme/template-front',
@@ -16,8 +15,7 @@ add_action('wp_enqueue_scripts', function () {
 	);
 });
 
-add_action('app/theme/layout', function () {
-
+add_action('app/theme/layout/main', function () {
 	// render page sections
 	print view('section/section', 'hero')->render();
 	print view('section/section', 'features')->render();
@@ -31,4 +29,4 @@ add_action('app/theme/layout', function () {
 });
 
 // render page layout
-print view('layout/layout')->render();
+print view('layout/main')->render();

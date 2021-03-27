@@ -13,7 +13,6 @@ class Styles implements BootstrapInterface, ServiceProviderInterface
     public function __bootstrap(): void
     {
         add_action('after_setup_theme', function () {
-
             // dequeue parent styles
             add_action('wp_enqueue_scripts', [$this, 'dequeueScripts'], 15);
         });
