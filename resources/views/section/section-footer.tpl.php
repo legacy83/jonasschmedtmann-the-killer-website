@@ -1,4 +1,4 @@
-<footer>
+<section class="section-footer">
     <div class="row">
         <div class="col span-1-of-2">
             <ul class="footer-nav">
@@ -27,4 +27,4 @@
             Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful city of Lisbon, Portugal, March 2015.
         </p>
     </div>
-</footer>
+</section>

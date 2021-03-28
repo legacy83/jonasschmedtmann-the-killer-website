@@ -222,17 +222,13 @@ input[type='submit']:focus {
 /*  #   Section Header
 /* --------------------------------------------------------------------------------------------- */
 
-header {
+.section-hero {
 	background-attachment: fixed;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/images/hero.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
 }
-
-/* --------------------------------------------------------------------------------------------- */
-/*  #   Section Header | Hero
-/* --------------------------------------------------------------------------------------------- */
 
 .hero-text-box {
 	left: 50%;
@@ -534,7 +530,7 @@ input[type='checkbox'] {
 /*  #   Section Footer
 /* --------------------------------------------------------------------------------------------- */
 
-footer {
+.section-footer {
 	background-color: #333;
 	font-size: 80%;
 	padding: 50px;
