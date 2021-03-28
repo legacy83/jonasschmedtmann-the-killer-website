@@ -8,7 +8,6 @@
 use function Mezu\view;
 
 add_action('wp_enqueue_scripts', function () {
-	// enqueue page styles
 	wp_enqueue_style(
 		'app/theme/template-front',
 		get_theme_file_uri('template-front.css')
@@ -33,5 +32,4 @@ add_action('app/theme/main', function () {
 	print view('section/section', 'contact')->render();
 });
 
-// render page layout
-print view('layout/main')->render();
+print view('layout/layout')->render();
