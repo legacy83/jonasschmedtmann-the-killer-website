@@ -23,13 +23,9 @@ add_action('app/theme/footer', function () {
 });
 
 add_action('app/theme/main', function () {
-	print view('section/section', 'features')->render();
-	print view('section/section', 'meals')->render();
-	print view('section/section', 'steps')->render();
-	print view('section/section', 'cities')->render();
-	print view('section/section', 'testimonials')->render();
-	print view('section/section', 'plans')->render();
-	print view('section/section', 'contact')->render();
+	if (have_posts()) : the_post();
+		the_content();
+	endif;
 });
 
 print view('layout/layout')->render();
