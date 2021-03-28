@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', function () {
 	);
 });
 
-add_action('app/theme/layout/main', function () {
+add_action('app/theme/main', function () {
 	// render page sections
 	print view('section/section', 'hero')->render();
 	print view('section/section', 'features')->render();
