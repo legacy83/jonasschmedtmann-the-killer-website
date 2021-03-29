@@ -20,7 +20,7 @@ add_filter('block_categories', function (array $categories) {
     return array_merge($categories, [
         [
             'slug'  => 'app-theme-blocks',
-            'title' => esc_html__('App Theme', 'app-theme'),
+            'title' => esc_html__('Theme Blocks', 'app-theme'),
         ]
     ]);
 }, 10, 2);
