@@ -18,7 +18,7 @@ final class RegisterBlockType
         $block = wp_parse_args($this->block, [
             'name' => $this->name,
             'description' => __('Nunc elementum magna cursus libero vehicula maximus.', 'app-theme'),
-            'render_callback' => BlockRenderFactory::create($this->name),
+            'render_callback' => BlockRenderFactory::make($this->name),
             'category' => 'app-theme-blocks',
         ]);
 

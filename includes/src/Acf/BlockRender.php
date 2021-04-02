@@ -15,7 +15,7 @@ final class BlockRender
         $this->name = $name;
     }
 
-    public function __invoke(array $block, string $content = '', bool $isPreview = false, int $postId = 0)
+    public function display(array $block, string $content = '', bool $isPreview = false, int $postId = 0)
     {
         print view($this->slug, $this->name)->render([
             'block' => $block,

@@ -13,7 +13,7 @@ final class WithEditorPreview
         $this->blockRender = $blockRender;
     }
 
-    public function __invoke(array $block, string $content = '', bool $isPreview = false, int $postId = 0)
+    public function display(array $block, string $content = '', bool $isPreview = false, int $postId = 0)
     {
         if ($isPreview) {
             print view('block/block', 'preview')->render([
@@ -26,6 +26,6 @@ final class WithEditorPreview
             return;
         }
 
-        call_user_func($this->blockRender, $block, $content, $isPreview, $postId);
+        $this->blockRender->display($block, $content, $isPreview, $postId);
     }
 }
