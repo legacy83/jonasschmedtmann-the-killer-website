@@ -4,8 +4,8 @@ namespace App\Theme\Acf;
 
 final class RegisterBlockTypeFactory
 {
-    public static function create()
+    public static function create(string $name, array $block)
     {
-        return new RegisterBlockType();
+        return new RegisterBlockType($name, $block);
     }
 }

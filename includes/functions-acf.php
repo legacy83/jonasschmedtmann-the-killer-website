@@ -2,7 +2,6 @@
 
 namespace App\Theme;
 
-use App\Theme\Acf\BlockRenderFactory;
 use App\Theme\Acf\RegisterBlockTypeFactory;
 
 /*  -----------------------------------------------------------------------------------------------
@@ -11,9 +10,9 @@ use App\Theme\Acf\RegisterBlockTypeFactory;
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create()->register('cities', [
+    RegisterBlockTypeFactory::create('cities', [
         'title' => __('Cities', 'app-theme'),
-    ]);
+    ])->register();
 });
 
 /*  -----------------------------------------------------------------------------------------------
@@ -22,9 +21,9 @@ add_action('acf/init', function () {
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create()->register('contact', [
+    RegisterBlockTypeFactory::create('contact', [
         'title' => __('Contact', 'app-theme'),
-    ]);
+    ])->register();
 });
 
 /*  -----------------------------------------------------------------------------------------------
@@ -33,9 +32,9 @@ add_action('acf/init', function () {
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create()->register('features', [
+    RegisterBlockTypeFactory::create('features', [
         'title' => __('Features', 'app-theme'),
-    ]);
+    ])->register();
 });
 
 /*  -----------------------------------------------------------------------------------------------
@@ -44,9 +43,9 @@ add_action('acf/init', function () {
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create()->register('meals', [
+    RegisterBlockTypeFactory::create('meals', [
         'title' => __('Meals', 'app-theme'),
-    ]);
+    ])->register();
 });
 
 /*  -----------------------------------------------------------------------------------------------
@@ -55,9 +54,9 @@ add_action('acf/init', function () {
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create()->register('plans', [
+    RegisterBlockTypeFactory::create('plans', [
         'title' => __('Plans', 'app-theme'),
-    ]);
+    ])->register();
 });
 
 /*  -----------------------------------------------------------------------------------------------
@@ -66,9 +65,9 @@ add_action('acf/init', function () {
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create()->register('steps', [
+    RegisterBlockTypeFactory::create('steps', [
         'title' => __('Steps', 'app-theme'),
-    ]);
+    ])->register();
 });
 
 /*  -----------------------------------------------------------------------------------------------
@@ -77,7 +76,7 @@ add_action('acf/init', function () {
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create()->register('testimonials', [
+    RegisterBlockTypeFactory::create('testimonials', [
         'title' => __('Testimonials', 'app-theme'),
-    ]);
+    ])->register();
 });
