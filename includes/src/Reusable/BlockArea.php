@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Theme;
+namespace App\Theme\Reusable;
 
-final class ReusableBlockArea
+final class BlockArea
 {
     private string $location;
 
@@ -16,7 +16,7 @@ final class ReusableBlockArea
         $query = new \WP_Query([
             'post_type' => 'wp_block',
             'posts_per_page' => 1,
-            'name' => "reusable-block-area-{$this->location}",
+            'name' => "block-area-{$this->location}",
         ]);
 
         if ($query->have_posts()) {
