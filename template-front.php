@@ -5,6 +5,7 @@
  *
  */
 
+use App\Theme\Loop\ContentFactory;
 use App\Theme\Reusable\BlockAreaFactory;
 
 use function Mezu\view;
@@ -24,10 +25,7 @@ add_action('app/theme/footer', function () {
 	BlockAreaFactory::create('footer')->display();
 });
 
-add_action('app/theme/main', function () {
-	if (have_posts()) : the_post();
-		the_content();
-	endif;
-});
+$content = ContentFactory::create();
+add_action('app/theme/main', $content);
 
 print view('layout/layout')->render();
