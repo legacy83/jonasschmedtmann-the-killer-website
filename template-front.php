@@ -5,6 +5,8 @@
  *
  */
 
+use App\Theme\ReusableBlockAreaFactory;
+
 use function Mezu\view;
 
 add_action('wp_enqueue_scripts', function () {
@@ -15,11 +17,11 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 add_action('app/theme/header', function () {
-	print view('section/section', 'hero')->render();
+	ReusableBlockAreaFactory::create('header')->display();
 });
 
 add_action('app/theme/footer', function () {
-	print view('section/section', 'footer')->render();
+	ReusableBlockAreaFactory::create('footer')->display();
 });
 
 add_action('app/theme/main', function () {
