@@ -6,11 +6,6 @@ use function Mezu\view;
 
 final class BlockRender
 {
-    const PREVIEW_STYLE = [
-        'background: #eee',
-        'padding: 10px 20px',
-    ];
-
     private string $slug;
     private string $name;
 
@@ -22,15 +17,6 @@ final class BlockRender
 
     public function __invoke(array $block, string $content = '', bool $isPreview = false, int $postId = 0)
     {
-        if ($isPreview) {
-            print view('block/block', 'preview')->render([
-                'preview_style' => self::PREVIEW_STYLE,
-                'block' => $block,
-            ]);
-
-            return;
-        }
-
         print view($this->slug, $this->name)->render([
             'block' => $block,
             'content' => $content,
