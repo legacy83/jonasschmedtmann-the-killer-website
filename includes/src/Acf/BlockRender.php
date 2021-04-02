@@ -17,11 +17,18 @@ final class BlockRender
 
     public function display(array $block, string $content = '', bool $isPreview = false, int $postId = 0)
     {
-        print view($this->slug, $this->name)->render([
+        $context = [
             'block' => $block,
             'content' => $content,
             'is_preview' => $isPreview,
             'post_id' => $postId,
-        ]);
+        ];
+
+        if ($isPreview) {
+            print view('block/block', 'preview')->render($context);
+            return;
+        }
+
+        print view($this->slug, $this->name)->render($context);
     }
 }
