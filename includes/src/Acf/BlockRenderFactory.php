@@ -6,7 +6,10 @@ final class BlockRenderFactory
 {
     public static function create(string $name): BlockRender
     {
-        return new BlockRender('block/block', $name);
+        $blockRenderPreview = new BlockRender('block/block', 'preview');
+        $blockRender = new BlockRender('block/block', $name, $blockRenderPreview);
+
+        return $blockRender;
     }
 
     public static function make(string $name): callable

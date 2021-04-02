@@ -13,7 +13,7 @@ final class RegisterBlockType
         $this->block = $block;
     }
 
-    public function register()
+    public function register(): void
     {
         $block = wp_parse_args($this->block, [
             'name' => $this->name,
