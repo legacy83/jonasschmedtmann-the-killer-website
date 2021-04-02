@@ -43,6 +43,28 @@ add_action('acf/init', function () {
 --------------------------------------------------------------------------------------------------- */
 
 add_action('acf/init', function () {
+    RegisterBlockTypeFactory::create('footer', [
+        'title' => __('Footer', 'app-theme'),
+    ])->register();
+});
+
+/*  -----------------------------------------------------------------------------------------------
+    LOREM IPSUM
+    Suspendisse sodales ipsum non justo imperdiet cursus.
+--------------------------------------------------------------------------------------------------- */
+
+add_action('acf/init', function () {
+    RegisterBlockTypeFactory::create('hero', [
+        'title' => __('Hero', 'app-theme'),
+    ])->register();
+});
+
+/*  -----------------------------------------------------------------------------------------------
+    LOREM IPSUM
+    Suspendisse sodales ipsum non justo imperdiet cursus.
+--------------------------------------------------------------------------------------------------- */
+
+add_action('acf/init', function () {
     RegisterBlockTypeFactory::create('meals', [
         'title' => __('Meals', 'app-theme'),
     ])->register();
