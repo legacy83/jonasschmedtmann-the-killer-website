@@ -4,7 +4,7 @@ namespace App\Theme\Loop;
 
 final class Content
 {
-    public function __invoke(): void
+    public function display(): void
     {
         if (!have_posts()) {
             return;

@@ -17,15 +17,8 @@ add_action('wp_enqueue_scripts', function () {
 	);
 });
 
-add_action('app/theme/header', function () {
-	BlockAreaFactory::create('header')->display();
-});
-
-add_action('app/theme/footer', function () {
-	BlockAreaFactory::create('footer')->display();
-});
-
-$content = ContentFactory::create();
-add_action('app/theme/main', $content);
+add_action('app/theme/header', BlockAreaFactory::make('header'));
+add_action('app/theme/footer', BlockAreaFactory::make('footer'));
+add_action('app/theme/main', ContentFactory::make());
 
 print view('layout/layout')->render();

@@ -8,4 +8,13 @@ final class BlockAreaFactory
     {
         return new BlockArea($location);
     }
+
+    public static function make(string $location): callable
+    {
+        $blockArea = self::create($location);
+
+        return function () use ($blockArea) {
+            $blockArea->display();
+        };
+    }
 }

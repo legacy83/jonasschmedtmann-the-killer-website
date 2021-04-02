@@ -8,4 +8,13 @@ final class ContentFactory
     {
         return new Content;
     }
+
+    public static function make(): callable
+    {
+        $content = self::create();
+
+        return function () use ($content) {
+            $content->display();
+        };
+    }
 }
