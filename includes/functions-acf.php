@@ -9,96 +9,78 @@ use App\Theme\Acf\RegisterBlockTypeFactory;
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('cities', [
-        'title' => __('Cities', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('cities', [
+    'title' => __('Cities', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('contact', [
-        'title' => __('Contact', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('contact', [
+    'title' => __('Contact', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('features', [
-        'title' => __('Features', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('features', [
+    'title' => __('Features', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('footer', [
-        'title' => __('Footer', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('footer', [
+    'title' => __('Footer', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('hero', [
-        'title' => __('Hero', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('hero', [
+    'title' => __('Hero', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('meals', [
-        'title' => __('Meals', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('meals', [
+    'title' => __('Meals', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('plans', [
-        'title' => __('Plans', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('plans', [
+    'title' => __('Plans', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('steps', [
-        'title' => __('Steps', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('steps', [
+    'title' => __('Steps', 'app-theme'),
+]));
 
 /*  -----------------------------------------------------------------------------------------------
     LOREM IPSUM
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
-add_action('acf/init', function () {
-    RegisterBlockTypeFactory::create('testimonials', [
-        'title' => __('Testimonials', 'app-theme'),
-    ])->register();
-});
+add_action('acf/init', RegisterBlockTypeFactory::make('testimonials', [
+    'title' => __('Testimonials', 'app-theme'),
+]));
