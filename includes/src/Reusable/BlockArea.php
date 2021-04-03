@@ -2,7 +2,9 @@
 
 namespace App\Theme\Reusable;
 
-final class BlockArea
+use App\Theme\Foundation\BlockAreaInterface;
+
+final class BlockArea implements BlockAreaInterface
 {
     private string $location;
 
