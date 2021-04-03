@@ -2,22 +2,17 @@
 
 namespace App\Theme\Acf;
 
+use App\Theme\Foundation\BlockRenderMaker;
+
 final class BlockRenderFactory
 {
-    public static function create(string $name): BlockRender
-    {
-        $blockRenderPreview = new BlockRender('block/block', 'preview');
-        $blockRender = new BlockRender('block/block', $name, $blockRenderPreview);
-
-        return $blockRender;
-    }
-
     public static function make(string $name): callable
     {
-        $blockRender = self::create($name);
+        $blockRenderPreview = new BlockRender('block/block', 'preview');
+        $blockRenderPreview = apply_filters('app/theme/blockRender/preview', $blockRenderPreview, $name);
 
-        return function (array $block, string $content = '', bool $isPreview = false, int $postId = 0) use ($blockRender) {
-            $blockRender->display($block, $content, $isPreview, $postId);
-        };
+        return new BlockRenderMaker(
+            new BlockRender('block/block', $name, $blockRenderPreview)
+        );
     }
 }

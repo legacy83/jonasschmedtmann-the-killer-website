@@ -2,9 +2,11 @@
 
 namespace App\Theme\Acf;
 
+use App\Theme\Foundation\BlockRenderInterface;
+
 use function Mezu\view;
 
-final class BlockRender
+final class BlockRender implements BlockRenderInterface
 {
     private string $slug;
     private string $name;

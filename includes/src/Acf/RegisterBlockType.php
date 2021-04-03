@@ -2,7 +2,9 @@
 
 namespace App\Theme\Acf;
 
-final class RegisterBlockType
+use App\Theme\Foundation\RegisterBlockTypeInterface;
+
+final class RegisterBlockType implements RegisterBlockTypeInterface
 {
     private string $name;
     private array $block;
