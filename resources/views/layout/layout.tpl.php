@@ -19,9 +19,11 @@
     <?php endif; ?>
 
     <?php if (has_action('app/theme/main')) : ?>
-        <main class="site-main">
-            <?php do_action('app/theme/main'); ?>
-        </main>
+        <div class="content-area">
+            <main class="site-main">
+                <?php do_action('app/theme/main'); ?>
+            </main>
+        </div>
     <?php endif; ?>
 
     <?php if (has_action('app/theme/footer')) : ?>

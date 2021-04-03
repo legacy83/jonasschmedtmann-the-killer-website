@@ -4,15 +4,12 @@ namespace App\Theme\Loop;
 
 use App\Theme\Foundation\ContentAreaInterface;
 
+use function Mezu\view;
+
 final class ContentArea implements ContentAreaInterface
 {
     public function display(): void
     {
-        if (!have_posts()) {
-            return;
-        }
-
-        the_post();
-        the_content();
+        print view('loop/content/content')->render();
     }
 }
