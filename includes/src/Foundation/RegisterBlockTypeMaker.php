@@ -2,13 +2,11 @@
 
 namespace App\Theme\Foundation;
 
-use App\Theme\Acf\RegisterBlockType;
-
 final class RegisterBlockTypeMaker
 {
     private RegisterBlockTypeInterface $registerBlockType;
 
-    public function __construct(RegisterBlockType $registerBlockType)
+    public function __construct(RegisterBlockTypeInterface $registerBlockType)
     {
         $this->registerBlockType = $registerBlockType;
     }

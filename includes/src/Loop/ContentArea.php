@@ -2,7 +2,9 @@
 
 namespace App\Theme\Loop;
 
-final class Content
+use App\Theme\Foundation\ContentAreaInterface;
+
+final class ContentArea implements ContentAreaInterface
 {
     public function display(): void
     {
