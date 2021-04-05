@@ -5,7 +5,7 @@
         </div>
         <div class="pizza__content">
             <div class="pizza__title">
-                <h1 class="pizza__heading">Pizza Vegetale 👌</h1>
+                <h2 class="pizza__heading">Pizza Vegetale 👌</h2>
                 <div class="pizza__tag pizza__tag--1">#vegetarian</div>
                 <div class="pizza__tag pizza__tag--2">#italian</div>
             </div>
