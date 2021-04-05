@@ -63,6 +63,15 @@ add_action('acf/init', RegisterBlockTypeFactory::make('meals', [
     Suspendisse sodales ipsum non justo imperdiet cursus.
 --------------------------------------------------------------------------------------------------- */
 
+add_action('acf/init', RegisterBlockTypeFactory::make('pizza', [
+    'title' => __('Pizza', 'app-theme'),
+]));
+
+/*  -----------------------------------------------------------------------------------------------
+    LOREM IPSUM
+    Suspendisse sodales ipsum non justo imperdiet cursus.
+--------------------------------------------------------------------------------------------------- */
+
 add_action('acf/init', RegisterBlockTypeFactory::make('plans', [
     'title' => __('Plans', 'app-theme'),
 ]));
