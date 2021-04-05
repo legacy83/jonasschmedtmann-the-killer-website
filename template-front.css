@@ -638,12 +638,10 @@ footer p {
 }
 
 .pizza__content {
-	align-items: center;
-	background-color: #fff;
+	background: white;
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	justify-content: center;
 	padding: 35px 30px;
 }
 
@@ -667,12 +665,6 @@ footer p {
 .pizza__heading {
 	font-size: 20px;
 	margin-right: auto;
-	margin: 0;
-	text-align: left;
-}
-
-.pizza__heading:after {
-	display: none;
 }
 
 .pizza__tag {
@@ -687,7 +679,6 @@ footer p {
 .pizza__tag--1 {
 	background-color: #67b26f;
 }
-
 .pizza__tag--2 {
 	background-color: #4ca2cd;
 }
@@ -713,4 +704,17 @@ footer p {
 .emoji {
 	font-size: 20px;
 	margin-right: 3px;
+}
+
+/* -- fixes -- */
+.pizza__heading {
+	margin-bottom: 0;
+}
+
+.pizza__heading::after {
+	display: none;
+}
+
+.pizza__heading img.emoji {
+	display: none !important;
 }
