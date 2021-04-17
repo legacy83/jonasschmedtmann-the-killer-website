@@ -1,0 +1,9 @@
+{
+    "intelephense.environment.includePaths": [
+        "/home/develop/Code/wordpressorg-WordPress",
+        "/home/develop/Code/wordpressorg-advanced-custom-fields-pro",
+        "/home/develop/Code/trsenna-dalen",
+        "/home/develop/Code/trsenna-mazoo",
+        "/home/develop/Code/trsenna-mezu"
+    ]
+}
